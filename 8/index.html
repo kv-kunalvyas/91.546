@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Problem 8</title>
+</head>
+<body style="font-family:georgia;">
+	<div id='sketch' style="width: 700px; height: 400px; margin: 0 auto; font-family:georgia;">
+		<h2><i>Final Exam - Problem 8 </i></h2>
+		<p style="font-size:16px">
+			<a href="../index.html"><i><b> Menu</b></i></a>
+		</p>
+		<form>
+			<input type="button" onclick="draw()" value="Draw" style="width: 45px; height: 25px; background-color:white">
+			<input type="button" onclick="increaseSize()" value="Brush Size +" style="width: 100; height: 25px; background-color:white">
+			<input type="button" onclick="decreaseSize()" value="Brush Size -" style="width: 100px; height: 25px; background-color:white">
+			<input type="button" onclick="toggleBrush()" value="Toggle Brush" style="width: 90px; height: 25px; background-color:white">
+			<input type="button" onclick="erase()" value="Erase" style="width: 60px; height: 25px; background-color:white">
+			<input type="button" onclick="clearCanvas()" value="Clear" style="width: 50px; height: 25px; background-color:lightgrey">
+		</form>
+		<br>
+		<canvas id="palette" width="700" height="57" style= "border:0px solid black">
+		</canvas>
+		<canvas id="myCanvas" width="700" height="400" style= "border:3px solid black">
+			<script src="8-colors-tested.js"></script>
+		</canvas>
+		NOTE: (Tested on Mac OSX) The color palette doesn't load on Chrome. Works on Safari and Firefox
+	</div>
+</body>
+</html>

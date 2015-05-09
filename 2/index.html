@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Problem 2</title>
+</head>
+<body style="font-family:georgia; width: 700px; margin: 0 auto;  align: center;">
+	<div id='sketch' style="width: 700px; margin: 0 auto; font-family:georgia;">
+		<h2><i>Final Exam - Problem 2</i></h2>
+		<p style="font-size:16px">
+			<a href="../index.html"><i><b> Menu</b></i></a>
+		</p><hr>
+		<p style="font-size:14px">
+			Fill the plane coefficients as <strong>x + y + z = c</strong> and not as <strong>x + y + z + c = 0</strong>
+		</p><hr>
+	</div>
+		<div style="float:left; height: 55px;">
+			<input id="x11" type ="textbox" size="3" value ="1"/> x<sub>1</sub>
+			<input id="y11" type ="textbox" size="3" value ="0"/> y<sub>1</sub>
+			<input id="z11" type ="textbox" size="3" value ="1"/> z<sub>1</sub><br>
+			<input id="x12" type ="textbox" size="3" value ="4"/> x<sub>2</sub>
+			<input id="y12" type ="textbox" size="3" value ="-2"/> y<sub>2</sub>
+			<input id="z12" type ="textbox" size="3" value ="2"/> z<sub>2</sub>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			</div>
+
+			<div style="float:left; height: 55px;">
+			<input id="x21" type ="textbox" size="3" value ="1"/> x<sub>plane</sub>
+			<input id="y21" type ="textbox" size="3" value ="1"/> y<sub>plane</sub><br>
+			<input id="z21" type ="textbox" size="3" value ="1"/> z<sub>plane</sub>
+			<input id="c" type ="textbox" size="3" value ="6"/> c<sub>plane</sub>
+			
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		</div>
+		<div style="float:left; width: 150px; height: 44px; align:center; display: block;">
+			<input type="button" onclick="intersect()" value="Calculate">
+		</div>
+		<br><br><br>
+		<hr>
+		
+		<div id="result" style="clear:both;">
+			
+			<br>
+		</div>
+			<script src="2-line-polygon-intersection-tested.js"></script>
+			<script></script>
+		</div>
+	</div>
+</body>
+</html>

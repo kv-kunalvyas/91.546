@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Problem 3</title>
+</head>
+<body style="font-family:georgia; width: 700px; margin: 0 auto; align: center;">
+	<div id='sketch' style="width: 700px; margin: 0 auto; font-family:georgia;">
+		<h2><i>Final Exam - Problem 3 </i></h2>
+		<p style="font-size:16px">
+			<a href="../index.html"><i><b> Menu</b></i></a>
+		</p><hr>
+		<div style="width: 700px;">
+				The apothem of a polygon is defined as r.cos(180/n). Tolerance is equal to the total radius minus the apothem.
+				Hence, <em>Tolerance = r - r.cos(180/n)</em>
+		</div>
+		<div id='tolerance' style="width: 700px; margin: 0 auto; font-family:georgia; float:right; border: 1px solid black"></div>
+			<hr>
+		<div>
+			<input id="n" onclick="draw()" type ="range" min ="3" max="10" step ="1" value ="6"/> Edges in the polygon <em>(n)</em>
+			<input id="r" onclick="draw()" type ="range" min ="100" max="180" step ="1" value ="140"/> Radius of the circle <em>(r)</em><br>
+			<canvas id="main" style="width: 400px;"></canvas>
+			<script src="ngon.min.js"></script>
+			<script src="3-polygon-circle-approx-tested.js"></script>
+			<script>draw();</script>
+		</div>
+	</div>
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Problem 6</title>
+</head>
+<body style="font-family:georgia; width: 700px; margin: 0 auto; ">
+	<div id='sketch' style="width: 700px; height: 400px; margin: 0 auto; font-family:georgia;">
+		<h2><i>Final Exam - Problem 6 </i></h2>
+		<p style="font-size:16px">
+			<a href="../index.html"><i><b> Menu</b></i></a>
+		</p><hr>
+		<i><strong>INSTRUCTIONS</strong>:</i>
+		<br>
+		(1) Click on the canvas to select edges of the polygon.
+		<br>
+		(2) Click <strong>Draw</strong> when finished selecting points.
+		<br>
+		(3) Click <strong>Extrude</strong> and then click inside the canvas rectangle.
+		<br>
+		(4) Press <strong>Up Arrow key</strong> / <strong>Down Arrow key</strong> to turn the planar object to 3D.
+		<br>
+		<br>
+		<form>
+			<input type="button" onclick="drawPolygon()" value="Draw" style="width: 45px; height: 25px; background-color:white">
+			<input type="button" onclick="extrude()" value="Extrude" style="width: 60; height: 25px; background-color:white">
+			<input type="button" onclick="refresh()" value="Clear" style="width: 50px; height: 25px; background-color:lightgrey">
+		</form>
+		<br>
+		
+			<canvas id="myCanvas" width="700" height="400" style= "border:3px solid black;">
+				<script src="6-prism-tested.js"></script>
+			</canvas>
+	</div>
+</body>
+</html>
